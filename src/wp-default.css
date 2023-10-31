@@ -1,0 +1,52 @@
+.wrap {
+  a {
+    color: #2271b1;
+    transition-property: border,background,color;
+    transition-duration: .05s;
+    transition-timing-function: ease-in-out
+  }
+
+  a:active,a:hover {
+    color: #135e96
+  }
+  h1,h2,h3,h4,h5,h6 {
+    display: block;
+    font-weight: 600
+  }
+
+  h1 {
+    color: #1d2327;
+    font-size: 2em;
+    margin: .67em 0
+  }
+
+  h2,h3 {
+    color: #1d2327;
+    font-size: 1.3em;
+    margin: 1em 0
+  }
+
+  .update-core-php h2 {
+    margin-top: 4em
+  }
+
+  .update-messages h2,.update-php h2,h4 {
+    font-size: 1em;
+    margin: 1.33em 0
+  }
+
+  h5 {
+    font-size: .83em;
+    margin: 1.67em 0
+  }
+
+  h6 {
+    font-size: .67em;
+    margin: 2.33em 0
+  }
+
+  .theme-browser .theme .theme-name {
+    height: auto;
+  }
+
+}

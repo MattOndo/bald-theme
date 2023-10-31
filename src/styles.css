@@ -1,0 +1,9 @@
+/* Custom Admin Styles */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "wp-default.css";
+@import "layout.css";
+@import "typography.css";
