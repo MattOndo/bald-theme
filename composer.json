@@ -1,0 +1,24 @@
+{
+    "name": "mattondo/bald-theme",
+    "description": "The Bald Theme is purpose-built for Headless WordPress. It is intended to be used in conjunction with a separate front-end application and does not contain any front-end assets.",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Matt Ondo",
+            "email": "yours.truly@mattondo.com"
+        }
+    ],
+    "require": {
+        "htmlburger/carbon-fields": "^3.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "require-dev": {
+        "php-stubs/acf-pro-stubs": "^6.1",
+        "php-stubs/generator": "^0.8.4"
+    }
+}
