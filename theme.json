@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": false,
+    "border": {
+        "color": false,
+        "radius": false,
+        "style": false,
+        "width": false
+    },
+    "color": {
+        "background": false,
+        "custom": false,
+        "customDuotone": false,
+        "customGradient": false,
+        "defaultGradients": false,
+        "defaultPalette": false,
+        "duotone": [],
+        "gradients": [],
+        "link": false,
+        "text": false,
+        "palette": []
+    },
+    "custom": {},
+    "dimensions": {
+        "minHeight": false
+    },
+    "layout": {
+      "allowEditing": false
+    },
+    "spacing": {
+        "blockGap": null,
+        "margin": false,
+        "padding": false,
+        "customSpacingSize": false,
+        "units": [
+            "%"
+        ],
+        "spacingScale": {},
+        "spacingSizes": []
+    },
+    "typography": {
+        "customFontSize": false,
+        "dropCap": false,
+        "fluid": false,
+        "fontFamilies": [
+            {
+              "name": "Default",
+              "slug": "default",
+              "fontFamily": "Open Sans, system-ui, sans-serif"
+            },
+            {
+              "name": "Headline",
+              "slug": "default",
+              "fontFamily": "Raleway, system-ui, sans-serif"
+            }
+        ],
+        "fontStyle": false,
+        "fontWeight": false,
+        "letterSpacing": false,
+        "lineHeight": false,
+        "textColumns": true,
+        "textDecoration": false,
+        "textTransform": false,
+        "fontSizes": []
+    }
+  }
+}
