@@ -16,9 +16,5 @@
         "allow-plugins": {
             "composer/installers": true
         }
-    },
-    "require-dev": {
-        "php-stubs/acf-pro-stubs": "^6.1",
-        "php-stubs/generator": "^0.8.4"
     }
 }
