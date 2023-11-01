@@ -7,7 +7,8 @@ function register_acf_field_groups() {
     // ACF Field Group Registration
     $groups = array(
     'faq-accordion',
-    'image'
+    'image',
+    'button'
 );
     foreach ($groups as $group) {
       require_once get_template_directory() . '/includes/acf/fields/' . $group . '.php';
