@@ -20,7 +20,33 @@
         "gradients": [],
         "link": false,
         "text": false,
-        "palette": []
+        "palette": [
+            {
+              "slug": "blue",
+              "name": "Blue",
+              "color": "#0071BC"
+            },
+            {
+              "slug": "gray",
+              "name": "Gray",
+              "color": "#F2F2F2"
+            },
+            {
+              "slug": "white",
+              "name": "White",
+              "color": "#ffffff"
+            },
+            {
+              "slug": "black",
+              "name": "Black",
+              "color": "#000000"
+            },
+            {
+              "slug": "red",
+              "name": "Red",
+              "color": "#E31C3D"
+            }
+          ]
     },
     "custom": {},
     "dimensions": {
