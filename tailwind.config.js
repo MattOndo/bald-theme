@@ -13,11 +13,12 @@ theme.settings.typography.fontFamilies.forEach(fam => {
 
 module.exports = {
   content: [
-    "./acf-*/**/*.php",
-    "./acf-*/**/*.js",
-    "./acf-*/**/*.css",
+    "./acf/**/*.php",
+    "./acf/**/*.js",
+    "./acf/**/*.css",
     "./src/**/*.js",
-    "./src/**/*.css"
+    "./src/**/*.css",
+    "../../uploads/faustwp/**/*.{php,js,css}",
   ],
   theme: {
     screens: {
