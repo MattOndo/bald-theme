@@ -10,7 +10,7 @@ function register_acf_field_groups() {
     'image'
 );
     foreach ($groups as $group) {
-      require_once get_stylesheet_directory() . '/includes/acf/fields/' . $group . '.php';
+      require_once get_template_directory() . '/includes/acf/fields/' . $group . '.php';
     }
 }
 add_action('acf/init', 'register_acf_field_groups');

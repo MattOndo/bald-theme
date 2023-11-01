@@ -1,7 +1,7 @@
 <?php
 
 add_action('enqueue_block_editor_assets', function() {
-	wp_enqueue_script('core-columns-attribute', get_stylesheet_directory_uri() . '/utils/core-columns-attribute/build/index.js', ['wp-edit-post'], null);
+	wp_enqueue_script('core-columns-attribute', get_template_directory_uri() . '/utils/core-columns-attribute/build/index.js', ['wp-edit-post'], null);
 });
 
 add_action( 'graphql_register_types', 'example_extend_wpgraphql_schema' );

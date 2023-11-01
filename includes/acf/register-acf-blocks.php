@@ -10,7 +10,7 @@ function register_acf_blocks() {
     'image'
 );
     foreach ($blocks as $block) {
-        register_block_type( get_stylesheet_directory() . '/includes/acf/blocks/' . $block );
+        register_block_type( get_template_directory() . '/includes/acf/blocks/' . $block );
     }
 }
 add_action( 'init', 'register_acf_blocks' );

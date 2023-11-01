@@ -46,7 +46,7 @@ require_once( get_template_directory() . '/includes/disable-gutenberg-editor.php
  * @since 1.0.0
  * 
  */
-require_once( get_stylesheet_directory() . '/includes/disable-gutenberg-blocks.php' );
+require_once( get_template_directory() . '/includes/disable-gutenberg-blocks.php' );
 
 /**
  * Enqueue scripts and styles.
@@ -65,8 +65,8 @@ add_action( 'admin_enqueue_scripts', 'bald_theme_admin_style' );
  * @since 1.0.0
  */
 if (is_plugin_active('advanced-custom-fields-pro/acf.php')) {
-	require_once( get_stylesheet_directory() . '/includes/acf/register-acf-blocks.php' );
-	require_once( get_stylesheet_directory() . '/includes/acf/register-acf-field-groups.php' );
+	require_once( get_template_directory() . '/includes/acf/register-acf-blocks.php' );
+	require_once( get_template_directory() . '/includes/acf/register-acf-field-groups.php' );
 }
 
 /**
@@ -75,5 +75,5 @@ if (is_plugin_active('advanced-custom-fields-pro/acf.php')) {
  * @since 1.0.0
  */
 if (is_plugin_active('wp-graphql/wp-graphql.php')) {
-	require_once( get_stylesheet_directory() . '/utils/core-columns-attribute/core-columns-attribute.php' );
+	require_once( get_template_directory() . '/utils/core-columns-attribute/core-columns-attribute.php' );
 }
