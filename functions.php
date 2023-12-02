@@ -12,7 +12,7 @@
 
 if ( ! defined( 'BALD_THEME_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'BALD_THEME_VERSION', '1.0.0' );
+	define( 'BALD_THEME_VERSION', '2.0.0' );
 }
 
 function bald_theme_setup() {

@@ -15,6 +15,10 @@ Refer to the [GitHub repository](https://github.com/MattOndo/bald-theme/releases
 
 == Changelog ==
 
+2.0.0
+
+- Removes dependencies for cleaner installations
+
 1.0.0
 
 - Initial release
