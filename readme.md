@@ -15,18 +15,16 @@ Bald Theme requires the following dependencies.
 
 ## Getting Started
 
-To begin, clone or download this repository.
+To begin, clone or download this repository and install dependencies:
 
-```
+```sh
 git clone git@github.com:MattOndo/bald-theme.git
-```
 
-Install the necessary dependencies:
-
-```
 cd bald-theme
+
 composer install
-npm install
+
+yarn install
 ```
 
 ### Developer Scripts
@@ -34,19 +32,19 @@ npm install
 Compile Tailwind CSS, watch files, compile on file change.
 
 ```sh
-dev:css
+yarn dev:css
 ```
 
 Build Tailwind CSS
 
 ```sh
-build:css
+yarn build:css
 ```
 
 Build & Minify Tailwind CSS
 
 ```sh
-minify:css
+yarn minify:css
 ```
 
 ## Using the Theme
