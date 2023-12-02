@@ -1,8 +1,8 @@
-# GitHub Action:
-# Runs when publishing a release
-# Creates a branch from the release tag
-
 name: New Release
+
+env:
+  ZIP_FILE_NAME: bald-theme.zip
+  PLUGIN_SLUG: bald-theme
 
 on:
   release:
@@ -14,10 +14,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set ENV variables
-        run: |
-          echo "REPO_NAME=${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}" >> $GITHUB_ENV
-
       - name: Checkout code
         uses: actions/checkout@v3
 
@@ -36,28 +32,17 @@ jobs:
         with:
           command: install
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-      
-      - name: Install NPM Packages
-        run: yarn install --frozen-lockfile
-
-      - name: Build assets for production
-        run: yarn build:minify
-
       - name: manual zip - necessary to create the propper container
-        run: cd .. && zip -r ${{ env.REPO_NAME}}.zip ${{ env.REPO_NAME}}/ -x@bald-theme/.deployignore
+        run: cd .. && zip -r ${{ env.ZIP_FILE_NAME}} ${{ env.PLUGIN_SLUG}}/ -x@bald-theme/.deployignore
 
       - name: move the zip
-        run: mkdir build && cd .. && mv ${{ env.REPO_NAME}}.zip ${{ env.REPO_NAME}}/build/${{ env.REPO_NAME}}.zip
+        run: mkdir build && cd .. && mv ${{ env.ZIP_FILE_NAME}} ${{ env.PLUGIN_SLUG}}/build/${{ env.ZIP_FILE_NAME}}
 
       - name: Upload files to current release
         uses: svenstaro/upload-release-action@2.5.0
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ../${{ env.REPO_NAME}}/build/${{ env.REPO_NAME}}.zip
-          asset_name: ${{ env.REPO_NAME}}.zip
+          file: ../${{ env.PLUGIN_SLUG}}/build/${{ env.ZIP_FILE_NAME}}
+          asset_name: ${{ env.ZIP_FILE_NAME}}
           tag: ${{ github.ref }}
           overwrite: true
