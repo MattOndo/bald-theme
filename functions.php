@@ -58,4 +58,3 @@ function bald_theme_admin_style() {
   wp_enqueue_style( 'bald-theme-admin' );
 }
 add_action( 'admin_enqueue_scripts', 'bald_theme_admin_style' );
-}

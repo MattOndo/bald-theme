@@ -53,7 +53,9 @@
         "minHeight": false
     },
     "layout": {
-      "allowEditing": false
+      "allowEditing": false,
+      "contentSize": "1080px",
+      "wideSize": "1440px"
     },
     "spacing": {
         "blockGap": null,
