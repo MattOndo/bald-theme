@@ -1,0 +1,27 @@
+.wp-block-acf-image {
+  container-type: inline-size;
+  container-name: acf-image-block;
+}
+
+@container acf-image-block (min-width: 700px) {
+  .acf-block-fields {
+    display: grid;
+    grid-template-columns: 160px auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+      "imageField imageField"
+      "captionToggleField captionField";
+  }
+  
+  .acf-block-fields .image_field {
+    grid-area: imageField;
+  }
+  
+  .acf-block-fields .caption_toggle_field {
+    grid-area: captionToggleField;
+  }
+  
+  .acf-block-fields .caption_field {
+    grid-area: captionField;
+  }
+}

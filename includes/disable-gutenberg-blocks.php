@@ -1,6 +1,6 @@
 <?php
 
-function bald_child_disable_blocks( $allowed_blocks ) {
+function bald_theme_disable_blocks( $allowed_blocks ) {
 	$blocks = WP_Block_Type_Registry::get_instance()->get_all_registered();
 
 	$disabled_blocks = array(
@@ -32,11 +32,11 @@ function bald_child_disable_blocks( $allowed_blocks ) {
 		'core/navigation-link',
 		'core/navigation-submenu',
 		'core/more',
-		'core/embed',
-		'core/cover',
+		// 'core/embed',
+		// 'core/cover',
 		'core/file',
-		'core/gallery',
-		'core/image',
+		// 'core/gallery',
+		// 'core/image',
 		'core/audio',
 		'core/media-text',
 		'core/footnotes',
@@ -109,4 +109,4 @@ function bald_child_disable_blocks( $allowed_blocks ) {
 
 	return array_keys( $blocks );
 }
-add_filter( 'allowed_block_types_all', 'bald_child_disable_blocks' );
+add_filter( 'allowed_block_types_all', 'bald_theme_disable_blocks' );

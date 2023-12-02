@@ -1,0 +1,8 @@
+.editor-styles-wrapper .wp-block-acf-button a {
+  text-decoration-line: none;
+}
+
+.editor-styles-wrapper .wp-block-acf-button a:active, 
+.editor-styles-wrapper .wp-block-acf-button a:hover {
+  color: #fff;
+}

@@ -54,7 +54,17 @@ require_once( get_template_directory() . '/includes/disable-gutenberg-blocks.php
  * @since 1.0.0
  */
 function bald_theme_admin_style() {
-  wp_register_style( 'bald-theme-admin', get_template_directory_uri() . '/public/styles.css', false, null );
+  wp_register_style( 'bald-theme-admin', get_template_directory_uri() . '/styles/styles.css', false, null );
   wp_enqueue_style( 'bald-theme-admin' );
 }
 add_action( 'admin_enqueue_scripts', 'bald_theme_admin_style' );
+
+/**
+ * Register custom blocks
+ * 
+ * @since 1.0.0
+ */
+if (is_plugin_active('advanced-custom-fields-pro/acf.php')) {
+	require_once( get_template_directory() . '/includes/acf/register-acf-blocks.php' );
+	require_once( get_template_directory() . '/includes/acf/register-acf-field-groups.php' );
+}

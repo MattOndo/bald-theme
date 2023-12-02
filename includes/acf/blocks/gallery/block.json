@@ -1,0 +1,21 @@
+{
+    "name": "acf/gallery",
+    "title": "Gallery",
+    "icon": "dashicons-images-alt2",
+    "description": "A better gallery block",
+    "category": "formatting",
+    "apiVersion": 2,
+    "keywords": ["image"],
+    "style": [ "file:./block.css" ],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "block.php"
+    },
+    "supports": {
+        "html": false,
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "alignText": false
+    }
+}
