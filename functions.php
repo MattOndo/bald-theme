@@ -54,7 +54,7 @@ require_once( get_template_directory() . '/includes/disable-gutenberg-blocks.php
  * @since 1.0.0
  */
 function bald_theme_admin_style() {
-  wp_register_style( 'bald-theme-admin', get_template_directory_uri() . '/styles/styles.css', false, null );
+  wp_register_style( 'bald-theme-admin', get_template_directory_uri() . '/public/styles.css', false, null );
   wp_enqueue_style( 'bald-theme-admin' );
 }
 add_action( 'admin_enqueue_scripts', 'bald_theme_admin_style' );

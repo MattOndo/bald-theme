@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/MattOndo/bald-theme#readme",
   "scripts": {
-    "dev:css": "npx tailwindcss -i ./src/css/styles.css -o ./public/styles.css --postcss --watch",
-    "build:css": "npx tailwindcss -i ./src/css/styles.css -o ./public/styles.css --postcss",
-    "minify:css": "npx tailwindcss -i ./src/css/styles.css -o ./public/styles.css --postcss --minify"
+    "dev:css": "yarn tailwindcss -i ./src/css/styles.css -o ./public/styles.css --postcss --watch",
+    "build:css": "yarn tailwindcss -i ./src/css/styles.css -o ./public/styles.css --postcss",
+    "minify:css": "yarn tailwindcss -i ./src/css/styles.css -o ./public/styles.css --postcss --minify"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",

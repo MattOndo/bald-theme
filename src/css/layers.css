@@ -1,0 +1,7 @@
+@layer 
+  vendors,
+  vendors.tailwind, 
+  theme,
+  theme.base, 
+  theme.layouts, 
+  theme.blocks;

@@ -53,7 +53,8 @@
         "minHeight": false
     },
     "layout": {
-      "allowEditing": false
+      "contentSize": "90%",
+      "wideSize": "64rem"
     },
     "spacing": {
         "blockGap": null,
@@ -74,12 +75,12 @@
             {
               "name": "Default",
               "slug": "default",
-              "fontFamily": "Open Sans, system-ui, sans-serif"
+              "fontFamily": "'Fira Sans', system-ui, sans-serif"
             },
             {
-              "name": "Headline",
+              "name": "Code",
               "slug": "default",
-              "fontFamily": "Raleway, system-ui, sans-serif"
+              "fontFamily": "'Fira Code', 'Courier New', monospace"
             }
         ],
         "fontStyle": false,

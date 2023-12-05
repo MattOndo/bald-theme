@@ -1,0 +1,8 @@
+/* Declare CSS Cascade Layers Hierarchy */
+@import './layers.css';
+
+/* Import & assign to appropriate CSS Layer */
+@import "vendors/tailwind.css" layer(vendors.tailwind);
+@import "fonts/fira.css" layer(theme.base);
+@import "base/typography.css" layer(theme.base);
+@import "blocks/columns.css" layer(theme.blocks);
